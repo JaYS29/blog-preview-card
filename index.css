@@ -1,0 +1,111 @@
+:root {
+  --custom-yellow: hsl(47, 88%, 63%);
+  --custom-white: hsl(0, 0%, 100%);
+  --custom-gray-500: hsl(0, 0%, 42%);
+  --custom-gray-950: hsl(0, 0%, 7%);
+}
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Figtree-Italic";
+  src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--custom-yellow);
+}
+
+.card-container {
+  position: absolute;
+  width: 38.4rem;
+  height: 52.2rem;
+  background-color: var(--custom-white);
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-content {
+  position: absolute;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Figtree";
+}
+
+.card-content__image img {
+  border-radius: 1rem;
+}
+
+.card-content__category {
+  margin-top: 1rem;
+  width: 8.2rem;
+  height: 2.9rem;
+  background-color: var(--custom-yellow);
+  font-weight: 800;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content__tittle {
+  margin-top: 2rem;
+  font-size: 2.6rem;
+}
+
+.card-content__tittle a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+
+.card-content__tittle:hover a {
+  color: var(--custom-yellow);
+}
+
+.card-content__date {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.card-content__description {
+  margin-top: 2rem;
+  color: var(--custom-gray-500);
+}
+
+.card-content__footer {
+  width: 12.9rem;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.card-content__footer img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.card-content__footer p {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
